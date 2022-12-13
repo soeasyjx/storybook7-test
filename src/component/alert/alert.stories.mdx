@@ -1,0 +1,18 @@
+import { Canvas, Meta, Story, ArgsTable } from "@storybook/addon-docs";
+import { Alert } from "./index";
+
+<Meta title="基础组件/Alert" component={Alert} />
+
+<Canvas withSource="open" withToolbar>
+  <Story
+    name="Text"
+    args={{
+      text: "1111",
+      fontSize:16
+    }}
+    render={(args) => <Alert {...args} />}
+  />
+</Canvas>
+
+<ArgsTable story="Text" />
+
